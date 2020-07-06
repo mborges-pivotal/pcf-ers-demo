@@ -1,3 +1,13 @@
 # TODO: work on the spring boot data.sql loader for PCF
-spring.datasource.initialize: false
+#spring.datasource.initialize: false
 management.cloudfoundry.skip-ssl-validation: true
+
+# spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
+# spring.jpa.database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+spring:
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    # database-platform: org.hibernate.dialect.PostgreSQL9Dialect
